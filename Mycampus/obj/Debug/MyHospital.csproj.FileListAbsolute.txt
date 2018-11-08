@@ -1,0 +1,48 @@
+C:\Users\shivaraj\Documents\Visual Studio 2010\Projects\Mycampus\MyCampus\bin\MyCampus.dll
+C:\Users\shivaraj\Documents\Visual Studio 2010\Projects\Mycampus\MyCampus\bin\MyCampus.pdb
+C:\Users\shivaraj\Documents\Visual Studio 2010\Projects\Mycampus\MyCampus\bin\BLL.dll
+C:\Users\shivaraj\Documents\Visual Studio 2010\Projects\Mycampus\MyCampus\bin\DAL.dll
+C:\Users\shivaraj\Documents\Visual Studio 2010\Projects\Mycampus\MyCampus\bin\BLL.pdb
+C:\Users\shivaraj\Documents\Visual Studio 2010\Projects\Mycampus\MyCampus\bin\DAL.pdb
+C:\Users\shivaraj\Documents\Visual Studio 2010\Projects\Mycampus\MyCampus\obj\Debug\MyHospital.csprojResolveAssemblyReference.cache
+C:\Users\shivaraj\Documents\Visual Studio 2010\Projects\Mycampus\MyCampus\obj\Debug\MyCampus.dll
+C:\Users\shivaraj\Documents\Visual Studio 2010\Projects\Mycampus\MyCampus\obj\Debug\MyCampus.pdb
+C:\Users\shivaraj\Documents\Visual Studio 2010\Projects\MyHospital\MyCampus\bin\MyCampus.dll
+C:\Users\shivaraj\Documents\Visual Studio 2010\Projects\MyHospital\MyCampus\bin\MyCampus.pdb
+C:\Users\shivaraj\Documents\Visual Studio 2010\Projects\MyHospital\MyCampus\bin\BLL.dll
+C:\Users\shivaraj\Documents\Visual Studio 2010\Projects\MyHospital\MyCampus\bin\DAL.dll
+C:\Users\shivaraj\Documents\Visual Studio 2010\Projects\MyHospital\MyCampus\bin\BLL.pdb
+C:\Users\shivaraj\Documents\Visual Studio 2010\Projects\MyHospital\MyCampus\bin\DAL.pdb
+C:\Users\shivaraj\Documents\Visual Studio 2010\Projects\MyHospital\MyCampus\obj\Debug\MyHospital.csprojResolveAssemblyReference.cache
+C:\Users\shivaraj\Documents\Visual Studio 2010\Projects\MyHospital\MyCampus\obj\Debug\MyCampus.dll
+C:\Users\shivaraj\Documents\Visual Studio 2010\Projects\MyHospital\MyCampus\obj\Debug\MyCampus.pdb
+G:\MyHospital\MyCampus\bin\MyCampus.dll
+G:\MyHospital\MyCampus\bin\MyCampus.pdb
+G:\MyHospital\MyCampus\bin\BLL.dll
+G:\MyHospital\MyCampus\bin\DAL.dll
+G:\MyHospital\MyCampus\bin\BLL.pdb
+G:\MyHospital\MyCampus\bin\DAL.pdb
+G:\MyHospital\MyCampus\obj\Debug\ResolveAssemblyReference.cache
+G:\MyHospital\MyCampus\obj\Debug\MyCampus.dll
+G:\MyHospital\MyCampus\obj\Debug\MyCampus.pdb
+G:\MyHospital_1430026785625\MyHospital\MyCampus\bin\MyCampus.dll
+G:\MyHospital_1430026785625\MyHospital\MyCampus\bin\MyCampus.pdb
+G:\MyHospital_1430026785625\MyHospital\MyCampus\bin\BLL.dll
+G:\MyHospital_1430026785625\MyHospital\MyCampus\bin\DAL.dll
+G:\MyHospital_1430026785625\MyHospital\MyCampus\bin\BLL.pdb
+G:\MyHospital_1430026785625\MyHospital\MyCampus\bin\DAL.pdb
+G:\MyHospital_1430026785625\MyHospital\MyCampus\obj\Debug\ResolveAssemblyReference.cache
+G:\MyHospital_1430026785625\MyHospital\MyCampus\obj\Debug\MyCampus.dll
+G:\MyHospital_1430026785625\MyHospital\MyCampus\obj\Debug\MyCampus.pdb
+F:\DevOps\Documents\DotNet_Projects\MyHospital\MyHospital_1430026785625\MyHospital\MyCampus\obj\Debug\MyHospital.csprojAssemblyReference.cache
+F:\DevOps\Documents\DotNet_Projects\MyHospital\MyHospital_1430026785625\MyHospital\MyCampus\obj\Debug\MyHospital.csproj.CoreCompileInputs.cache
+F:\DevOps\Documents\DotNet_Projects\MyHospital\MyHospital_1430026785625\MyHospital\MyCampus\obj\Debug\MyCampus.dll
+F:\DevOps\Documents\DotNet_Projects\MyHospital\MyHospital_1430026785625\MyHospital\MyCampus\obj\Debug\MyCampus.pdb
+F:\DevOps\Documents\DotNet_Projects\MyHospital\MyHospital_1430026785625\MyHospital\MyCampus\bin\MyCampus.dll.config
+F:\DevOps\Documents\DotNet_Projects\MyHospital\MyHospital_1430026785625\MyHospital\MyCampus\bin\MyCampus.dll
+F:\DevOps\Documents\DotNet_Projects\MyHospital\MyHospital_1430026785625\MyHospital\MyCampus\bin\MyCampus.pdb
+F:\DevOps\Documents\DotNet_Projects\MyHospital\MyHospital_1430026785625\MyHospital\MyCampus\bin\BLL.dll
+F:\DevOps\Documents\DotNet_Projects\MyHospital\MyHospital_1430026785625\MyHospital\MyCampus\bin\DAL.dll
+F:\DevOps\Documents\DotNet_Projects\MyHospital\MyHospital_1430026785625\MyHospital\MyCampus\bin\BLL.pdb
+F:\DevOps\Documents\DotNet_Projects\MyHospital\MyHospital_1430026785625\MyHospital\MyCampus\bin\DAL.pdb
+F:\DevOps\Documents\DotNet_Projects\MyHospital\MyHospital_1430026785625\MyHospital\MyCampus\obj\Debug\MyHospital.csproj.CopyComplete

@@ -1,0 +1,521 @@
+﻿body
+{
+    min-height:688px;
+    height:auto;
+    margin-left:137px;
+    }
+   .masterbody
+    {
+        min-height:655px;
+        height:auto;
+        border-left:2px solid #4b6c9e;
+        border-right:2px solid #4b6c9e;
+        width:980px;
+    }
+.Loginbody 
+{
+    font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+    
+    padding: 0px;
+    color: #696969;
+    
+    width: 980px;
+    border-left:2px solid #4b6c9e;
+    border-right:2px solid #4b6c9e;
+    min-height:375px
+}
+.Loginstyle
+{
+    
+    top :200px;
+    max-height:300;
+    margin-left: 309px;
+    margin-right: 263px;
+    margin-top: 127px;
+    width: 391px;
+    border-style:inset;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 20px;
+    margin-bottom: 7px;
+    
+}
+#loginTable
+{
+    width : 342px;
+    
+    margin-left: 27px;
+    height: 194px;
+}
+#loginCaption
+{
+    font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+    color:#4b6c9e;
+    font-size:large;
+}
+td
+{
+            width: 154px;
+    margin-left: 40px;
+}
+
+#header
+{
+    position: relative;
+    
+    padding: 0px;
+    background: #4b6c9e;
+    
+    left: -19px;
+    right:19px;
+    height: 90px;
+    
+    margin-left: 20px;
+    margin-right: 7px;
+    width: 980px;
+    margin-bottom: 0px;
+    
+}
+.loginheader
+{
+    height: 90px;
+    border-bottom:1px solid black;
+    border-top:1px solid black;
+    width:980px;
+    background-color:#4b6c9e;
+    font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+    color:white;
+    font-size:50px;
+ }
+ #loginfooter
+{
+    margin-top:129px;
+    height: 37px;
+    border-top:1px solid black;
+    width:980px;
+    font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+    color:white;
+    font-size:20px;
+    background-color:#4b6c9e;
+    border-bottom:1px solid black;
+ }
+ .adminfooter
+ {
+     height: 37px;
+    border-top:1px solid black;
+    width:984px;
+    font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+    color:white;
+    font-size:20px;
+    background-color:#4b6c9e;
+    border-bottom:1px solid black;
+    
+ }
+ 
+  
+.RoleDisplay
+{
+    margin-top:-30px;
+    margin-left:840px;
+}
+.footer
+{
+    color:#4b6c9e;
+    padding: 8px 0px 0px 0px;
+    text-align: center;
+    line-height: normal;
+    background: #4b6c9e;
+    margin-left: 0px;
+    margin-right:6px;
+    height: 50px;
+    width: 984px;
+    margin-top: 3px;
+    margin-bottom: 0px;
+}
+.main
+{
+    padding : 0px 12px;
+    min-height: 490px;
+    height:auto;
+    border: 1px solid #496077;
+    margin-right:7px;
+    margin-left: 0px;
+    top:2px;
+    width: 957px;
+}
+.menu
+{
+    position:absolute;
+    margin-top:12px;
+    width: 979px;
+    background-color:#465c71;
+    border: 1px solid #496077;
+    
+    height: 31px;
+}
+
+.menu ul
+{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+}
+
+.menu ul li a, div.menu ul li a:visited
+{
+    background-color: #465c71;
+    border: 1px #4e667d solid;
+    color: #dde4ec;
+    display: block;
+    line-height: 1.27em;
+    padding: 4px 10px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.menu ul li a:hover
+{
+    background-color: #bfcbd6;
+    color: #465c71;
+    text-decoration: none;
+}
+
+.menu ul li a:active
+{
+    background-color: #465c71;
+    color: #cfdbe6;
+    text-decoration: none;
+}
+.art-menu a, .art-menu a:link, .art-menu a:visited, .art-menu a:hover
+{
+	text-align:left;
+	text-decoration:none;
+	outline:none;
+	letter-spacing:normal;
+	word-spacing:normal;
+}
+
+.art-menu
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style-type: none;
+	display: block;
+	background-color:#465c71;
+	border:1px solid white;
+}
+
+.art-menu li
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	display: block;
+	float: left;
+	position: relative;
+	z-index: 5;
+	
+	border:1px solid white;
+}
+
+.art-menu li:hover
+{
+	z-index: 10000;
+	white-space: normal;
+}
+
+.art-menu li li
+{
+	float: none;
+}
+
+.art-menu ul
+{
+	visibility: hidden;
+	position: absolute;
+	z-index: 10;
+	left: 0;
+	top: 0;
+	background:none;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style-type: none;
+	display: block;
+	
+}
+
+.art-menu li:hover>ul
+{
+	visibility: visible;
+	top: 100%;
+}
+
+.art-menu li li:hover>ul
+{
+	top: 0;
+	left: 100%;
+}
+
+.art-menu:after, .art-menu ul:after
+{
+	content: ".";
+	height: 0;
+	display: block;
+	visibility: hidden;
+	overflow: hidden;
+	clear: both;
+}
+.art-menu
+{
+	height: 38px;
+}
+
+.art-menu ul
+{
+	background-image: url(images/spacer.gif);
+	padding: 10px 30px 30px 30px;
+	margin: -10px 0 0 -30px;
+}
+
+.art-menu ul ul
+{
+	padding: 30px 30px 30px 10px;
+	margin: -30px 0 0 -10px;
+}
+
+/* menu structure */
+
+.art-menu
+{
+	padding: 6px 3px 0px 3px;
+}
+
+.art-nav
+{
+	position: relative;
+	height: 35px;
+	z-index: 100;
+	border-top:2px solid white;
+	color:White;
+	
+}
+
+.art-nav .l, .art-nav .r
+{
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	height: 35px;
+	background-image: url('images/nav.png');
+}
+
+.art-nav .l
+{
+	left: 0;
+	right:0px;
+}
+
+.art-nav .r
+{
+	right: 0;
+	width: 874px;
+	clip: rect(auto, auto, auto, 874px);
+}
+
+
+/* end Menu */
+
+/* begin MenuItem */
+.art-menu ul li
+{
+	clear: both;
+	background-color:#465c71;
+	width:143px;
+	height:auto;
+	font-size:larger;
+	color:White;
+	
+}
+
+.art-menu a
+{
+	position:relative;
+	display: block;
+	overflow:hidden;
+	height: 29px;
+	cursor: pointer;
+	text-decoration: none;
+	margin-right: 1px;
+	margin-left: 1px;
+}
+
+
+.art-menu a
+{
+	position:relative;
+	display: block;
+	overflow:hidden;
+	height: 29px;
+	cursor: pointer;
+	text-decoration: none;
+	margin-right: 1px;
+	margin-left: 1px;
+}
+
+
+.art-menu a .r, .art-menu a .l
+{
+	position:absolute;
+	display: block;
+	top:0;
+	z-index:-1;
+	height: 87px;
+	background-image: url('images/MenuItem.png');
+}
+
+.art-menu a .l
+{
+	left:0;
+	right:4px;
+}
+
+.art-menu a .r
+{
+	width:408px;
+	right:0;
+	clip: rect(auto, auto, auto, 404px);
+}
+
+.art-menu a .t 
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+font-style: normal;
+font-weight: normal;
+	color:White;
+	padding: 0 19px;
+	margin: 0 4px;
+	line-height: 29px;
+	text-align: center;
+}
+
+.art-menu a:hover .l, .art-menu a:hover .r
+{
+	top:-29px;
+}
+
+.art-menu li:hover>a .l, .art-menu li:hover>a .r
+{
+	top:-29px;
+}
+
+.art-menu li:hover a .l, .art-menu li:hover a .r
+{
+	top:-29px;
+}
+.art-menu a:hover .t
+{
+	color: #232622;
+}
+
+.art-menu li:hover a .t
+{
+	color: #232622;
+}
+
+.art-menu li:hover>a .t
+{
+	color: #232622;
+}
+
+
+.art-menu a.active .l, .art-menu a.active .r
+{
+	top: -58px;
+}
+
+.art-menu a.active .t
+{
+	color: white;
+}
+
+
+/* end MenuItem */
+
+/* begin MenuSubItem */
+.art-menu ul a
+{
+	display:block;
+	text-align: center;
+	white-space: nowrap;
+	height: 20px;
+	width: 180px;
+	overflow:hidden;
+	line-height: 20px;
+	margin-right: auto;
+    color:White;
+
+	background-image: url('images/subitem-bg.png');
+	background-position: left top;
+	background-repeat: repeat-x;
+	border-width: 0px;
+	border-style: solid;
+}
+
+.art-nav ul.art-menu ul span, .art-nav ul.art-menu ul span span
+{
+	display: inline;
+	float: none;
+	margin: inherit;
+	padding: inherit;
+	background-image: none;
+	text-align: inherit;
+	text-decoration: inherit;
+	color:White;
+}
+
+.art-menu ul a, .art-menu ul a:link, .art-menu ul a:visited, .art-menu ul a:hover, .art-menu ul a:active, .art-nav ul.art-menu ul span, .art-nav ul.art-menu ul span span
+{
+	text-align: left;
+	text-indent: 12px;
+	text-decoration: none;
+	line-height: 20px;
+	color:White;
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 12px;
+font-style: normal;
+font-weight: normal;
+}
+
+.art-menu ul ul a
+{
+	margin-left: auto;
+}
+
+.art-menu ul li a:hover
+{
+	
+	background-position: 0 -20px;
+}
+
+.art-menu ul li:hover>a
+{
+	
+	background-position: 0 -20px;
+}
+
+.art-nav .art-menu ul li a:hover span, .art-nav .art-menu ul li a:hover span span
+{
+	color: white;
+}
+
+.art-nav .art-menu ul li:hover>a span, .art-nav .art-menu ul li:hover>a span span
+{
+	color: white;
+}
+
+
+/* end MenuSubItem */

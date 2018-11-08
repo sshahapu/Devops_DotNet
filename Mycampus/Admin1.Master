@@ -1,0 +1,106 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin1.master.cs" Inherits="MyHospital.Admin1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="~/Styles/UserStyle.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    
+
+    </asp:ContentPlaceHolder>
+</head>
+<body style="background-image:url('girl-plain-colour-background.jpg'); background-repeat:repeat; margin-left:137px">
+    <form id="form1" runat="server">
+    <div class="masterbody">
+    <div class="loginheader"> 
+    <div style="float:left; height: 90px;"> <img src="Hospital_logo.jpg" height="90px" width="90px"/> </div>
+    <div style="padding:8px 0px 5px 5px "><span style="font-family: 'Arial Narrow';">My</span>Hospital<span style=" font-family: 'Arial Narrow'; font-size: x-large;">  Where there is care !</span></div>
+    </div>
+    <div class="RoleDisplay">
+    
+        <asp:Label ID="lblname" runat="server" Text="Label" ForeColor="White"></asp:Label>
+    </div>
+    
+        <div class="art-nav">
+                	
+                	<ul class="art-menu">
+                		<li>
+                			<a href="Adminhome.aspx" class=" active"><span class="l"></span><span class="r"></span><span class="t">Home</span></a>
+                		</li>
+                       
+                		<li>
+                			<a href="#"><span class="l"></span><span class="r"></span><span class="t">IPD</span></a>
+                			<ul>
+                                <li><a href="InRegistration.aspx">Registration</a>
+                				</li>
+                                <li><a href="SearchInPatient.aspx">Search/Edit Patient</a>
+                				</li>
+                                <li><a href="DeleteInPat.aspx">Delete</a>
+                				</li>
+                			</ul>
+                		</li>
+                        <li>
+                			<a href="#"><span class="l"></span><span class="r"></span><span class="t">OPD</span></a>
+                			<ul>
+                                <li><a href="OutRegistration.aspx">Registration</a>
+                				</li>
+                                <li><a href="SearchOutPatient.aspx">Search/Edit Patient</a>
+                				</li>
+                                <li><a href="DeleteOutPat.aspx">Delete</a>
+                				</li>
+                			</ul>
+                		</li>			
+                		<li>
+                			<a href="#"><span class="l"></span><span class="r"></span><span class="t">Pathology</span></a>
+                			<ul>
+                                
+                                <li><a href="GenerateReports.aspx">Generate reports</a>
+                				</li>
+                			</ul>
+                		</li>
+                          <li>
+                			<a href="#"><span class="l"></span><span class="r"></span><span class="t">Billing</span></a>
+                			<ul>
+                                <li><a href="IPBilling.aspx">In-Patient Bill</a>
+                				</li>
+                                <li><a href="OutPatBilling.aspx">Out-Patient Bill</a>
+                				</li>
+                                
+                			</ul>
+                		</li>
+                        <li>
+                			<a href="#"><span class="l"></span><span class="r"></span><span class="t">Doctor</span></a>
+                			<ul>
+                                <li><a href="Register_doct.aspx">Register Doctor</a>
+                				</li>
+                			</ul>
+                		</li>
+                        
+                        <li>
+                			<a href="Logout.aspx"><span class="l"></span><span class="r"></span><span class="t">Log Out</span></a>
+                		</li>
+                	</ul>
+                </div>
+                
+    
+    <div style="margin-left: 840px; margin-top:8px;position:relative;">
+                </div>
+    
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        
+    
+    
+    </div>
+    <div class="adminfooter">
+       <div>
+           <p style="margin-left:8px; text-align: left; margin-bottom: 4px; font-size: medium;">
+                                Copyright &copy; 2014 . All Rights Reserved.</p>
+       </div>
+    </div>
+    </form>
+</body>
+</html>

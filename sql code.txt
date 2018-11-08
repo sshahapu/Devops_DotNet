@@ -1,0 +1,622 @@
+---------------Login details--------
+create table Login_users(
+user_name varchar(20),
+password varchar(20));
+
+insert into Login_users values('Operator','temp*123');
+insert into Login_users values('Admin','welcome*123');
+
+select * from Login_users;
+
+----------Stored procedure to verify user details-------
+
+CREATE procedure SP_Verify_Login
+(
+  @user_name varchar(20)
+  
+)
+as 
+begin  
+select  password from Login_users where user_name=@user_name
+
+end
+
+exec SP_Verify_Login Admin
+-----------------------------------
+-------------insert patient details----------------------
+create table Patient_details
+(
+patid int primary key,
+Pname varchar(30), 
+age int, 
+gender varchar(10),
+adress varchar(100),
+contactno bigint, 
+Regdate varchar(20), 
+roomno int,
+department varchar(20),
+doctor_name varchar(20)
+)
+
+drop table Patient_details;
+
+drop procedure Insert_pat_details
+
+ 
+--------------------------------
+
+
+ --------------------------------
+ create procedure SP_SearchINPatient
+ (
+ @patid int
+ )
+ as begin
+ select patid ,Pname, age ,gender,adress ,contactno , Regdate ,roomno from Patient_details where patid=@patid
+ end
+
+
+-----------------------------------------
+
+create procedure SP_UpdateINPat
+(
+@patid int,
+@patadress varchar(40),
+@Patcont bigint,
+@room int
+)
+as
+begin
+update Patient_details set adress=@patadress,contactno=@Patcont,roomno=@room where patid=@patid
+end
+-----------------------------------------
+create procedure [dbo].[SP_SearchINPatient]
+ (
+ @patid int
+ )
+ as begin
+ select patid ,Pname, age ,gender,adress ,contactno , Regdate ,roomno from Patient_details where patid=@patid
+ end
+-------------------------------------
+
+select * from Patient_details
+--------------------------------
+create procedure SP_DisplayallInpat
+
+as
+
+begin
+select patid ,Pname, age ,gender,adress ,contactno , Regdate ,roomno from Patient_details where roomno!=''
+end 
+
+----------------------------
+create procedure SP_SearchOutPatient
+(
+@patid int
+
+)
+as
+declare @deprtname varchar(20)
+begin
+
+select patid ,Pname, age ,gender,department ,contactno , Regdate ,doctor_name from Patient_details where patid=@patid and department!=''
+
+end 
+
+----------------------------------------
+
+select * from Bill_details
+----------------------------------
+alter procedure sp_getpatdetails
+(
+@patid int
+)
+as
+begin
+select Pname, age ,gender, Regdate from Patient_details where patid=@patid 
+end
+-------------------------------
+alter procedure sp_get_billid
+as 
+begin
+select MAX(Bill_no)+1 as Bill_no from Bill_details
+end
+-------------------------------
+--------------------------------
+-------------------------
+
+-------------------------
+---------------------------
+drop table Doctor_details
+
+----------------------------------	
+------------------------------------
+	create procedure sp_patient_reports
+	(
+	@patid int,
+	@testname varchar(20),
+	@description varchar(100)
+	)
+	as 
+	begin
+	insert into patient_reports values(@patid,@testname,@description)
+	end
+-------------------------------------
+create table Patient_details
+(
+patid int identity(1,1) primary key,
+Pname varchar(30), 
+age int, 
+gender varchar(10),
+adress varchar(100),
+contactno bigint, 
+Regdate varchar(20), 
+roomno int,
+department varchar(20),
+doctor_name varchar(20)
+)
+--------------------------------------
+create table Bill_details(
+Bill_no int identity(1000,1) not null,
+Bill_date varchar(20),
+Patient_Id int foreign key references patient_details(patid),
+Pat_Name varchar(20),
+Age int,
+Gender varchar(20),
+Date_of_Admission varchar(20),
+Date_of_Discharge varchar(20),
+Room_Charges varchar(20),
+Pathology_fees varchar(20),
+Doctor_Fees varchar(20),
+Miscellaneous varchar(20),
+Total_Amount varchar(20),
+doct_name varchar(20)
+)
+----------------------------------	
+create table patient_reports
+	(
+	patid int foreign key references patient_details(patid),
+	test_name varchar(20),
+	description varchar(100)
+	)
+---------------------------------	
+create procedure Insert_pat_details
+(
+@Pname varchar(30), 
+@age int, 
+@gender varchar(10),
+@adress varchar(100),
+@contactno bigint, 
+@Regdate varchar(20), 
+@roomno int
+ )
+ AS 
+ BEGIN
+ INSERT INTO Patient_details (
+Pname, 
+age , 
+gender,
+adress ,
+contactno , 
+Regdate , 
+roomno )
+VALUES   (
+@Pname , 
+@age , 
+@gender ,
+@adress,
+@contactno , 
+@Regdate , 
+@roomno)
+                                 
+ END	
+-----------------------------------------	
+create PROCEDURE Insert_outpat_details
+(
+@Pname varchar(30), 
+@age int, 
+@gender varchar(10),
+@deprtmnt varchar(100),
+@contactno bigint, 
+@Regdate varchar(20), 
+@docname varchar(20)
+ )
+ AS 
+ BEGIN
+ INSERT INTO Patient_details (
+Pname, 
+age , 
+gender,
+department ,
+contactno , 
+Regdate , 
+doctor_name)
+VALUES   (
+@Pname , 
+@age , 
+@gender ,
+@deprtmnt,
+@contactno , 
+@Regdate , 
+@docname)
+                                 
+ END	
+	
+--------------------------------
+drop table room_details
+
+create table room_details
+(
+room_no int,
+room_type varchar(20),
+flag char,
+)
+----------------------------------------
+insert into room_details values (100,'Private','y')
+
+insert into room_details values (101,'Private','y')
+
+insert into room_details values (102,'Private','y')
+
+insert into room_details values (103,'Private','y')
+
+insert into room_details values (104,'Private','y')
+
+insert into room_details values (105,'Private','y')
+
+insert into room_details values (200,'General','y')
+
+insert into room_details values (201,'General','y')
+
+insert into room_details values (202,'General','y')
+
+
+ 
+select * from room_details
+-------------------------------------------
+CREATE TABLE Doctor_details(
+	[ID] [int] IDENTITY(1000,1000) NOT NULL,
+	[Name] [varchar](20) NULL,
+	[Addres] [varchar](50) NULL,
+	[Phone_Number] [varchar](20) NULL,
+	[Department] [varchar](20) NULL,
+	[Gender] [varchar](20) NULL
+	)
+---------------------------------
+select * from Doctor_details
+
+insert into Doctor_details values('Dr.Srinivasan',45,'8989890878','Cardiology','Male')
+insert into Doctor_details values('Dr.Srinivasan',30,'8989890878','Cardiology','Male')
+insert into Doctor_details values('Dr.Ramya',30,'8984390878','Cardiology','Female')
+insert into Doctor_details values('Dr.Gopal',32,'8234490878','Cardiology','Male')
+insert into Doctor_details values('Dr.Shankar',47,'8989890878','Cardiology','Male')
+insert into Doctor_details values('Dr.Shamsundar',56,'8989890878','Orthopedics','Male')
+insert into Doctor_details values('Dr.Ravi',63,'8989890878','Orthopedics','Male')
+insert into Doctor_details values('Dr.Shamala',60,'8989890878','Orthopedics','Female')
+insert into Doctor_details values('Dr.Navya',48,'8970043919','Dental','Female')
+insert into Doctor_details values('Dr.Shivaraj',34,'8989890878','Neurology','Male')
+insert into Doctor_details values('Dr.Bhavya',39,'8989890878','Neurology','Female')
+insert into Doctor_details values('Dr.Jayaraj',65,'8989890878','General surgery','Male')
+insert into Doctor_details values('Dr.Neetha',58,'8989890878','General surgery','Female')
+insert into Doctor_details values('Dr.Vimarsha',43,'8970043919','OBG','Female')
+----------------------
+create procedure sp_get_Doctid
+as 
+begin
+select MAX(ID)+1 as doct_id from Doctor_details
+end
+----------------
+create procedure sp_insert_doct_details
+(
+@doc_name varchar(20),
+@doc_age int,
+@ph_number varchar(20),
+@department varchar(20),
+@gender varchar(20)
+)
+as 
+begin
+insert into Doctor_details(Name,age,Phone_number,Department,Gender) values(@doc_name,@doc_age,@ph_number,@department,@gender)
+end
+---------------------
+create procedure sp_get_doct_name
+(
+@department varchar(20)
+)
+as
+begin
+select Name from  Doctor_details where Department=@department
+end
+=================================
+
+novmber 2
+ALTER procedure [dbo].[sp_getpatdetails]
+(
+@patid int
+)
+as
+begin
+select Pname, age ,gender, Regdate from Patient_details where patid=@patid and roomno!=''
+end
+------------------------------
+
+crete procedure [dbo].[sp_getoutpatdetails]
+(
+@patid int
+)
+as
+begin
+select Pname ,doctor_name from Patient_details where patid=@patid and doctor_name!='' 
+end
+-------------------------------
+ALTER procedure [dbo].[sp_insert_billdetails]
+(
+@patid int,
+@pname varchar(20),
+@age int,
+@gender varchar(20),
+@dischrd_date varchar(20),
+@admin_date varchar(20),
+@room_charge varchar(20),
+@doct_fees varchar(20),
+@pathology varchar(20),
+@miscenoius varchar(20),
+@total varchar(20),
+@bill_date varchar(20)
+)
+as
+begin
+insert into Bill_details(
+Bill_date,
+Patient_Id,
+Pat_Name,
+Age,
+Gender,
+Date_of_Admission,
+Date_of_Discharge,
+Room_Charges,
+Pathology_fees,
+Doctor_Fees,
+Miscellaneous,Total_Amount)
+values(
+@bill_date,
+@patid,
+@pname,
+@age,
+@gender,
+@admin_date,
+@dischrd_date,
+@room_charge,
+@pathology,
+@doct_fees,
+@miscenoius,
+@total)
+end
+--------------------------------
+ALTER procedure [dbo].[sp_outPat_billdetails]
+(
+@patid int,
+@pname varchar(20),
+@doctrname varchar(20),
+@const_fee varchar(20),
+ @total varchar(20),
+ @billdate varchar(20)
+)
+as 
+begin
+insert into Bill_details (Bill_date,Patient_Id,Pat_Name,doct_name,Miscellaneous, Total_Amount)
+values(@billdate,@patid,@pname,@doctrname,@const_fee,@total)
+end
+
+
+----------------------------------
+November 4th
+
+create procedure [dbo].[SP_DisplayallInpat_del]
+
+as
+
+begin
+select distinct(p.patid) ,p.Pname,p.contactno,p.roomno,p.Regdate,b.Date_of_Discharge from Patient_details as p , Bill_details as b 
+where  p.patid in ( select b.Patient_Id from Bill_details where b.Date_of_Discharge < DATEADD(dd,-7,GETDATE()))
+end
+-----------------------------------
+create procedure sp_deleteinpat
+(  
+@patid int
+)
+as
+begin
+delete from  Bill_details where Patient_Id=@patid
+delete from Patient_details  where patid=@patid
+end 
+----------------------------------
+create procedure SP_Displayalloutpat_del
+
+as
+
+begin
+select distinct(p.patid) ,p.Pname,p.contactno,p.Regdate from Patient_details as p  
+where Regdate < DATEADD(dd,-60,GETDATE() )
+end
+-----------------------------------
+create procedure sp_deleteoutpat
+(  
+@patid int
+)
+as
+begin
+delete from  Bill_details where Patient_Id=@patid
+delete from Patient_details  where patid=@patid
+end
+---------------------------------------
+november 6th 
+ALTER procedure [dbo].[sp_insert_billdetails]
+(
+@patid int,
+@pname varchar(20),
+@age int,
+@gender varchar(20),
+@dischrd_date varchar(20);
+@admin_date varchar(20),
+@room_charge varchar(20),
+@doct_fees varchar(20),
+@pathology varchar(20),
+@miscenoius varchar(20),
+@total varchar(20),
+@bill_date varchar(20)
+)
+as
+begin
+insert into Bill_details(
+Bill_date,
+Patient_Id,
+Pat_Name,
+Age,
+Gender,
+Date_of_Admission,
+Date_of_Discharge,
+Room_Charges,
+Pathology_fees,
+Doctor_Fees,
+Miscellaneous,Total_Amount)
+values(
+@bill_date,
+@patid,
+@pname,
+@age,
+@gender,
+@admin_date,
+@dischrd_date,
+@room_charge,
+@pathology,
+@doct_fees,
+@miscenoius,
+@total)
+end
+---------------------------
+create table Bill_details(
+Bill_no int identity(1000,1) not null,
+Bill_date varchar(20),
+Patient_Id int foreign key references patient_details(patid),
+Pat_Name varchar(20),
+Age int,
+Gender varchar(20),
+Date_of_Admission varchar(20),
+Date_of_Discharge datetime,
+Room_Charges varchar(20),
+Pathology_fees varchar(20),
+Doctor_Fees varchar(20),
+Miscellaneous varchar(20),
+Total_Amount varchar(20),
+doct_name varchar(20)
+)---------------------------
+
+ALTER procedure [dbo].[SP_DisplayallInpat_del]
+as
+begin
+select distinct(p.patid) ,p.Pname,p.contactno,p.roomno,p.Regdate,b.Date_of_Discharge from Patient_details as p , Bill_details as b 
+where  p.patid in ( select b.Patient_Id from Bill_details where Bill_details.Date_of_Discharge < DATEADD(dd,-7,GETDATE()))
+end
+-----------------------------
+April-25
+===========================
+drop table Bill_details;
+===========================
+CREATE TABLE [dbo].[Bill_details](
+	[Bill_no] [int] IDENTITY(1000,1) NOT NULL,
+	[Bill_date] [varchar](20) NULL,
+	[Patient_Id] [int] NULL,
+	[Pat_Name] [varchar](20) NULL,
+	[Age] [int] NULL,
+	[Gender] [varchar](20) NULL,
+	[Date_of_Admission] [varchar](20) NULL,
+	[Date_of_Discharge] [varchar](20) NULL,
+	[Room_Charges] [varchar](20) NULL,
+	[Pathology_fees] [varchar](20) NULL,
+	[Doctor_Fees] [varchar](20) NULL,
+	[Miscellaneous] [varchar](20) NULL,
+	[Total_Amount] [varchar](20) NULL,
+	[doct_name] [varchar](20) NULL
+) ON [PRIMARY]
+
+GO
+
+SET ANSI_PADDING OFF
+GO
+
+ALTER TABLE [dbo].[Bill_details]  WITH CHECK ADD FOREIGN KEY([Patient_Id])
+REFERENCES [dbo].[Patient_details] ([patid])
+GO
+
+===============================================
+Refresh database
+then go to table difinition
+edit top 200 rows
+then in first row enter some name press enter
+===============================================
+ALTER procedure [dbo].[sp_insert_billdetails]
+(
+@patid int,
+@pname varchar(20),
+@age int,
+@gender varchar(20),
+@dischrd_date varchar(20);
+@admin_date varchar(20),
+@room_charge varchar(20),
+@doct_fees varchar(20),
+@pathology varchar(20),
+@miscenoius varchar(20),
+@total varchar(20),
+@bill_date varchar(20)
+)
+as
+begin
+insert into Bill_details(
+Bill_date,
+Patient_Id,
+Pat_Name,
+Age,
+Gender,
+Date_of_Admission,
+Date_of_Discharge,
+Room_Charges,
+Pathology_fees,
+Doctor_Fees,
+Miscellaneous,Total_Amount)
+values(
+@bill_date,
+@patid,
+@pname,
+@age,
+@gender,
+@admin_date,
+@dischrd_date,
+@room_charge,
+@pathology,
+@doct_fees,
+@miscenoius,
+@total)
+end
+=======================================
+
+Project features,
+>we have used 3 layer architecture to build this project.
+UI  [explain]
+BLL [explain]
+DAL [explain].
+
+>we have used secured password management where user cannot login without password 
+autontication type is forms authontications.
+
+>Applied exception handlers(try, catch throw) ,where user cannot break the application with wrong inputs.
+
+>consistent text format, UI look and feel.
+
+>admin user has privilages than normal operatior, where ADmin can delete and generate bills for patient but not an operator can do
+
+Enhancements or next level.
+Bills and reports needs to emailed to patient.
+currently our application is supported by only google chrome, so we will migrate that IExplorer also
+
+

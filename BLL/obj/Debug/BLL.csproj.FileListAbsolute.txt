@@ -1,0 +1,47 @@
+C:\Users\shivaraj\Documents\Visual Studio 2010\Projects\MyCampus\BLL\bin\Debug\BLL.dll
+C:\Users\shivaraj\Documents\Visual Studio 2010\Projects\MyCampus\BLL\bin\Debug\BLL.pdb
+C:\Users\shivaraj\Documents\Visual Studio 2010\Projects\MyCampus\BLL\obj\Debug\BLL.dll
+C:\Users\shivaraj\Documents\Visual Studio 2010\Projects\MyCampus\BLL\obj\Debug\BLL.pdb
+C:\Users\shivaraj\Documents\Visual Studio 2010\Projects\MyCampus\BLL\bin\Debug\DAL.dll
+C:\Users\shivaraj\Documents\Visual Studio 2010\Projects\MyCampus\BLL\bin\Debug\Interfaces.dll
+C:\Users\shivaraj\Documents\Visual Studio 2010\Projects\MyCampus\BLL\bin\Debug\DAL.pdb
+C:\Users\shivaraj\Documents\Visual Studio 2010\Projects\MyCampus\BLL\bin\Debug\Interfaces.pdb
+C:\Users\shivaraj\Documents\Visual Studio 2010\Projects\MyCampus\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Users\shivaraj\Documents\Visual Studio 2010\Projects\MyHospital\BLL\bin\Debug\BLL.dll
+C:\Users\shivaraj\Documents\Visual Studio 2010\Projects\MyHospital\BLL\bin\Debug\BLL.pdb
+C:\Users\shivaraj\Documents\Visual Studio 2010\Projects\MyHospital\BLL\bin\Debug\DAL.dll
+C:\Users\shivaraj\Documents\Visual Studio 2010\Projects\MyHospital\BLL\bin\Debug\Interfaces.dll
+C:\Users\shivaraj\Documents\Visual Studio 2010\Projects\MyHospital\BLL\bin\Debug\DAL.pdb
+C:\Users\shivaraj\Documents\Visual Studio 2010\Projects\MyHospital\BLL\bin\Debug\Interfaces.pdb
+C:\Users\shivaraj\Documents\Visual Studio 2010\Projects\MyHospital\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Users\shivaraj\Documents\Visual Studio 2010\Projects\MyHospital\BLL\obj\Debug\BLL.dll
+C:\Users\shivaraj\Documents\Visual Studio 2010\Projects\MyHospital\BLL\obj\Debug\BLL.pdb
+G:\MyHospital\BLL\bin\Debug\BLL.dll
+G:\MyHospital\BLL\bin\Debug\BLL.pdb
+G:\MyHospital\BLL\bin\Debug\DAL.dll
+G:\MyHospital\BLL\bin\Debug\Interfaces.dll
+G:\MyHospital\BLL\bin\Debug\DAL.pdb
+G:\MyHospital\BLL\bin\Debug\Interfaces.pdb
+G:\MyHospital\BLL\obj\Debug\ResolveAssemblyReference.cache
+G:\MyHospital\BLL\obj\Debug\BLL.dll
+G:\MyHospital\BLL\obj\Debug\BLL.pdb
+G:\MyHospital_1430026785625\MyHospital\BLL\bin\Debug\BLL.dll
+G:\MyHospital_1430026785625\MyHospital\BLL\bin\Debug\BLL.pdb
+G:\MyHospital_1430026785625\MyHospital\BLL\bin\Debug\DAL.dll
+G:\MyHospital_1430026785625\MyHospital\BLL\bin\Debug\Interfaces.dll
+G:\MyHospital_1430026785625\MyHospital\BLL\bin\Debug\DAL.pdb
+G:\MyHospital_1430026785625\MyHospital\BLL\bin\Debug\Interfaces.pdb
+G:\MyHospital_1430026785625\MyHospital\BLL\obj\Debug\ResolveAssemblyReference.cache
+G:\MyHospital_1430026785625\MyHospital\BLL\obj\Debug\BLL.dll
+G:\MyHospital_1430026785625\MyHospital\BLL\obj\Debug\BLL.pdb
+F:\DevOps\Documents\DotNet_Projects\MyHospital\MyHospital_1430026785625\MyHospital\BLL\bin\Debug\BLL.dll
+F:\DevOps\Documents\DotNet_Projects\MyHospital\MyHospital_1430026785625\MyHospital\BLL\bin\Debug\BLL.pdb
+F:\DevOps\Documents\DotNet_Projects\MyHospital\MyHospital_1430026785625\MyHospital\BLL\bin\Debug\DAL.dll
+F:\DevOps\Documents\DotNet_Projects\MyHospital\MyHospital_1430026785625\MyHospital\BLL\bin\Debug\Interfaces.dll
+F:\DevOps\Documents\DotNet_Projects\MyHospital\MyHospital_1430026785625\MyHospital\BLL\bin\Debug\DAL.pdb
+F:\DevOps\Documents\DotNet_Projects\MyHospital\MyHospital_1430026785625\MyHospital\BLL\bin\Debug\Interfaces.pdb
+F:\DevOps\Documents\DotNet_Projects\MyHospital\MyHospital_1430026785625\MyHospital\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+F:\DevOps\Documents\DotNet_Projects\MyHospital\MyHospital_1430026785625\MyHospital\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+F:\DevOps\Documents\DotNet_Projects\MyHospital\MyHospital_1430026785625\MyHospital\BLL\obj\Debug\BLL.csproj.CopyComplete
+F:\DevOps\Documents\DotNet_Projects\MyHospital\MyHospital_1430026785625\MyHospital\BLL\obj\Debug\BLL.dll
+F:\DevOps\Documents\DotNet_Projects\MyHospital\MyHospital_1430026785625\MyHospital\BLL\obj\Debug\BLL.pdb

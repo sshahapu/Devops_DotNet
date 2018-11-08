@@ -1,0 +1,364 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6DF17709-7ECB-4BF6-8D4C-08DFD1A26545}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyCampus</RootNamespace>
+    <AssemblyName>MyCampus</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BLL">
+      <HintPath>..\BLL\bin\Debug\BLL.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Office.Interop.Word, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="Adminhome.aspx" />
+    <Content Include="Back_images.jpg" />
+    <Content Include="cardiology_stethoscope.jpg" />
+    <Content Include="DeleteInPat.aspx" />
+    <Content Include="DeleteOutPat.aspx" />
+    <Content Include="GenerateReports.aspx" />
+    <Content Include="GenerateReports_Oper.aspx" />
+    <Content Include="girl-plain-colour-background.jpg" />
+    <Content Include="Hospital_logo.jpg" />
+    <Content Include="InRegistration.aspx" />
+    <Content Include="InRegistration_Oper.aspx" />
+    <Content Include="IPBilling.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Logout.aspx" />
+    <Content Include="Operatorhome.aspx" />
+    <Content Include="OutPatBilling.aspx" />
+    <Content Include="OutRegistration.aspx" />
+    <Content Include="OutRegistration_oper.aspx" />
+    <Content Include="Register_doct.aspx" />
+    <Content Include="SearchInPatient.aspx" />
+    <Content Include="SearchInPat_Oper.aspx" />
+    <Content Include="SearchOutPatient.aspx" />
+    <Content Include="SearchOutPat_Oper.aspx" />
+    <Content Include="slideshow\image0.jpg" />
+    <Content Include="slideshow\image1.jpg" />
+    <Content Include="slideshow\image2.jpg" />
+    <Content Include="slideshow\slideshow.swf" />
+    <Content Include="slideshow\slideshow.xml" />
+    <Content Include="Styles\MyStyle.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Styles\UserStyle.css" />
+    <Content Include="ViewInPatient.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin1.Master.cs">
+      <DependentUpon>Admin1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin1.Master.designer.cs">
+      <DependentUpon>Admin1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Adminhome.aspx.cs">
+      <DependentUpon>Adminhome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adminhome.aspx.designer.cs">
+      <DependentUpon>Adminhome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteInPat.aspx.cs">
+      <DependentUpon>DeleteInPat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeleteInPat.aspx.designer.cs">
+      <DependentUpon>DeleteInPat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteOutPat.aspx.cs">
+      <DependentUpon>DeleteOutPat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeleteOutPat.aspx.designer.cs">
+      <DependentUpon>DeleteOutPat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GenerateReports.aspx.cs">
+      <DependentUpon>GenerateReports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GenerateReports.aspx.designer.cs">
+      <DependentUpon>GenerateReports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GenerateReports_Oper.aspx.cs">
+      <DependentUpon>GenerateReports_Oper.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GenerateReports_Oper.aspx.designer.cs">
+      <DependentUpon>GenerateReports_Oper.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="InRegistration.aspx.cs">
+      <DependentUpon>InRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InRegistration.aspx.designer.cs">
+      <DependentUpon>InRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InRegistration_Oper.aspx.cs">
+      <DependentUpon>InRegistration_Oper.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InRegistration_Oper.aspx.designer.cs">
+      <DependentUpon>InRegistration_Oper.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IPBilling.aspx.cs">
+      <DependentUpon>IPBilling.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IPBilling.aspx.designer.cs">
+      <DependentUpon>IPBilling.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operator.Master.cs">
+      <DependentUpon>Operator.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operator.Master.designer.cs">
+      <DependentUpon>Operator.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Operatorhome.aspx.cs">
+      <DependentUpon>Operatorhome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operatorhome.aspx.designer.cs">
+      <DependentUpon>Operatorhome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OutPatBilling.aspx.cs">
+      <DependentUpon>OutPatBilling.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OutPatBilling.aspx.designer.cs">
+      <DependentUpon>OutPatBilling.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OutRegistration.aspx.cs">
+      <DependentUpon>OutRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OutRegistration.aspx.designer.cs">
+      <DependentUpon>OutRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OutRegistration_oper.aspx.cs">
+      <DependentUpon>OutRegistration_oper.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OutRegistration_oper.aspx.designer.cs">
+      <DependentUpon>OutRegistration_oper.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register_doct.aspx.cs">
+      <DependentUpon>Register_doct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register_doct.aspx.designer.cs">
+      <DependentUpon>Register_doct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchInPatient.aspx.cs">
+      <DependentUpon>SearchInPatient.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchInPatient.aspx.designer.cs">
+      <DependentUpon>SearchInPatient.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchInPat_Oper.aspx.cs">
+      <DependentUpon>SearchInPat_Oper.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchInPat_Oper.aspx.designer.cs">
+      <DependentUpon>SearchInPat_Oper.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchOutPatient.aspx.cs">
+      <DependentUpon>SearchOutPatient.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchOutPatient.aspx.designer.cs">
+      <DependentUpon>SearchOutPatient.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchOutPat_Oper.aspx.cs">
+      <DependentUpon>SearchOutPat_Oper.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchOutPat_Oper.aspx.designer.cs">
+      <DependentUpon>SearchOutPat_Oper.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ViewInPatient.aspx.cs">
+      <DependentUpon>ViewInPatient.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewInPatient.aspx.designer.cs">
+      <DependentUpon>ViewInPatient.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin1.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Operator.Master" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1115</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

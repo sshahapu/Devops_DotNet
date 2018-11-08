@@ -1,0 +1,25 @@
+C:\Users\shivaraj\Documents\Visual Studio 2010\Projects\MyCampus\DAL\bin\Debug\DAL.dll
+C:\Users\shivaraj\Documents\Visual Studio 2010\Projects\MyCampus\DAL\bin\Debug\DAL.pdb
+C:\Users\shivaraj\Documents\Visual Studio 2010\Projects\MyCampus\DAL\obj\Debug\DAL.dll
+C:\Users\shivaraj\Documents\Visual Studio 2010\Projects\MyCampus\DAL\obj\Debug\DAL.pdb
+C:\Users\shivaraj\Documents\Visual Studio 2010\Projects\MyHospital\DAL\bin\Debug\DAL.dll
+C:\Users\shivaraj\Documents\Visual Studio 2010\Projects\MyHospital\DAL\bin\Debug\DAL.pdb
+C:\Users\shivaraj\Documents\Visual Studio 2010\Projects\MyHospital\DAL\obj\Debug\DAL.dll
+C:\Users\shivaraj\Documents\Visual Studio 2010\Projects\MyHospital\DAL\obj\Debug\DAL.pdb
+G:\MyHospital\DAL\bin\Debug\DAL.dll
+G:\MyHospital\DAL\bin\Debug\DAL.pdb
+G:\MyHospital\DAL\obj\Debug\ResolveAssemblyReference.cache
+G:\MyHospital\DAL\obj\Debug\DAL.dll
+G:\MyHospital\DAL\obj\Debug\DAL.pdb
+C:\Users\shivaraj\Documents\Visual Studio 2010\Projects\MyHospital\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+G:\MyHospital_1430026785625\MyHospital\DAL\bin\Debug\DAL.dll
+G:\MyHospital_1430026785625\MyHospital\DAL\bin\Debug\DAL.pdb
+G:\MyHospital_1430026785625\MyHospital\DAL\obj\Debug\ResolveAssemblyReference.cache
+G:\MyHospital_1430026785625\MyHospital\DAL\obj\Debug\DAL.dll
+G:\MyHospital_1430026785625\MyHospital\DAL\obj\Debug\DAL.pdb
+F:\DevOps\Documents\DotNet_Projects\MyHospital\MyHospital_1430026785625\MyHospital\DAL\bin\Debug\DAL.dll
+F:\DevOps\Documents\DotNet_Projects\MyHospital\MyHospital_1430026785625\MyHospital\DAL\bin\Debug\DAL.pdb
+F:\DevOps\Documents\DotNet_Projects\MyHospital\MyHospital_1430026785625\MyHospital\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+F:\DevOps\Documents\DotNet_Projects\MyHospital\MyHospital_1430026785625\MyHospital\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+F:\DevOps\Documents\DotNet_Projects\MyHospital\MyHospital_1430026785625\MyHospital\DAL\obj\Debug\DAL.dll
+F:\DevOps\Documents\DotNet_Projects\MyHospital\MyHospital_1430026785625\MyHospital\DAL\obj\Debug\DAL.pdb
